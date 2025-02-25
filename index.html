@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyForest - Keyboard Shortcut Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <i class="fas fa-tree logo-icon"></i>
+        <h1>KeyForest</h1>
+      </div>
+      <p class="tagline">Keep track and grow your keyboard shortcuts</p>
+      
+      <div class="app-selector-container">
+        <div class="app-selector">
+          <select id="app-select">
+            <!-- Apps will be populated here -->
+          </select>
+          <button id="add-app-btn" class="app-btn" title="Add Application">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button id="edit-app-btn" class="app-btn" title="Edit Application">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button id="delete-app-btn" class="app-btn" title="Delete Application">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="modifiers-container">
+        <div class="modifiers">
+          <button id="ctrl-view" class="modifier-btn">
+            <span class="modifier-icon">Ctrl</span>
+          </button>
+          <button id="alt-view" class="modifier-btn">
+            <span class="modifier-icon">Alt</span>
+          </button>
+          <button id="ctrl-alt-view" class="modifier-btn">
+            <span class="modifier-icon">Ctrl+Alt</span>
+          </button>
+          <button id="ctrl-shift-view" class="modifier-btn">
+            <span class="modifier-icon">Ctrl+Shift</span>
+          </button>
+          <button id="ctrl-alt-shift-view" class="modifier-btn">
+            <span class="modifier-icon">Ctrl+Alt+Shift</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="keyboard-container">
+        <!-- Keyboard will be dynamically generated here -->
+      </div>
+    </main>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <div id="action-modal" class="modal">
+      <div class="modal-content">
+        <h2>Assign Action</h2>
+        <div class="key-display">
+          <span id="modal-key-label">Key: </span>
+          <span id="modal-key"></span>
+        </div>
+        <div class="action-input">
+          <label for="action-name">Action:</label>
+          <input type="text" id="action-name" placeholder="Enter action (e.g., Save File)">
+        </div>
+        <div class="modal-buttons">
+          <button id="save-action">Save</button>
+          <button id="clear-action">Clear</button>
+          <button id="cancel-action">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="app-modal" class="modal">
+      <div class="modal-content">
+        <h2 id="app-modal-title">Add Application</h2>
+        <div class="app-input">
+          <label for="app-name">Application Name:</label>
+          <input type="text" id="app-name" placeholder="Enter application name">
+        </div>
+        <div class="modal-buttons">
+          <button id="save-app">Save</button>
+          <button id="cancel-app">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html> 

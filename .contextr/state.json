@@ -1,0 +1,23 @@
+{
+    "files": [
+        "README.md",
+        "index.html",
+        "main.js",
+        "package-lock.json",
+        "package.json",
+        "preload.js",
+        "renderer.js",
+        "styles.css"
+    ],
+    "watched_patterns": [
+        "README.md",
+        "assets",
+        "index.html",
+        "main.js",
+        "package-lock.json",
+        "package.json",
+        "preload.js",
+        "renderer.js",
+        "styles.css"
+    ]
+}
