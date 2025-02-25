@@ -11,7 +11,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Nathan Luo",
+    "email": "temp@gmail.com"
+  },
   "license": "ISC",
   "description": "A keyboard shortcut visualization and configuration tool",
   "devDependencies": {
