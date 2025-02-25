@@ -39,3 +39,6 @@ Desktop.ini
 
 # User data
 userData/ 
+
+# Contextr
+.contextr/
